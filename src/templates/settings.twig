@@ -1,0 +1,26 @@
+{# @var craft \craft\web\twig\variables\CraftVariable #}
+{#
+/**
+ * calendarics plugin for Craft CMS 3.x
+ *
+ * calendarics Settings.twig
+ *
+ * @author    Flow
+ * @copyright Copyright (c) 2019 Flow
+ * @link      www.flowsa.com
+ * @package   calendarics
+ * @since     1.0.0
+ */
+#}
+
+{% import "_includes/forms" as forms %}
+
+
+
+{{ forms.textField({
+    label: 'Some Field',
+    instructions: 'Enter some setting here.',
+    id: 'someAttribute',
+    name: 'someAttribute',
+    value: settings['someAttribute']})
+}}

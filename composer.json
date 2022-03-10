@@ -1,0 +1,40 @@
+{
+    "name": "flowsa/calendarics",
+    "description": "Download and store calendar ics files",
+    "type": "craft-plugin",
+    "version": "1.0.1",
+    "keywords": [
+        "craft",
+        "cms",
+        "craftcms",
+        "craft-plugin",
+        "calendarics"
+    ],
+    
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Flow",
+            "homepage": "https://www.flowsa.com"
+        }
+    ],
+    "require": {
+        "craftcms/cms": "^3.0.0-RC1"
+    },
+    "autoload": {
+        "psr-4": {
+          "flowsa\\calendarics\\": "src/"
+        }
+    },
+    "extra": {
+        "name": "Calendar ics",
+        "handle": "calendarics",
+        "hasCpSettings": false,
+        "hasCpSection": false,
+        "changelogUrl": "???",
+        "components": {
+            "calendaricsService": "flowsa\\calendarics\\services\\CalendaricsService"
+        },
+        "class": "flowsa\\calendarics\\calendarics"
+    }
+}
